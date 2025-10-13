@@ -1,0 +1,12 @@
+.article{
+  padding-top: 48px;
+  &__paragraph{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #292929;
+  }
+}
