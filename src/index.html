@@ -20,7 +20,7 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navigation">
         <a href="#" class="navigation__link">
           <img src="./images/Logo.svg" class="navigation__logo"
@@ -28,7 +28,7 @@
         </a>
         <div class="navigation__icons">
           <a href="#"class="navigation__link"><img src="./images/Icon-Phone-call.svg" alt="Phone icon"></a>
-          <a href="#"class="navigation__link"><img src="./images/Icon-Burger-menu.svg" alt="Burger menu"></a>
+          <a href="#menu"class="navigation__link"><img src="./images/Icon-Burger-menu.svg" alt="Burger menu"></a>
         </div>
 
       </nav>
@@ -39,22 +39,22 @@
       </h1>
     </header>
 
-    <div class="menu">
+    <div class="menu" id="menu">
       <nav class="navigation">
         <a href="#" class="navigation__link">
           <img src="./images/Logo.svg" class="navigation__logo"
           alt="Nothing logo">
         </a>
         <div class="navigation__icons">
-          <a href="#"class="navigation__link"><img src="./images/Icon-Close.svg" alt="Close menu"></a>
+          <a href="#header"class="navigation__link"><img src="./images/Icon-Close.svg" alt="Close menu"></a>
         </div>
       </nav>
 
       <nav class="links menu__links">
         <ul class="links__list">
-          <li class="links__item"><a href="#" class="links__link">Products</a></li>
-          <li class="links__item"><a href="#" class="links__link">Store</a></li>
-          <li class="links__item"><a href="#" class="links__link">Login</a></li>
+          <li class="links__item"><a href="#Products" class="links__link">Products</a></li>
+          <li class="links__item"><a href="#Store" class="links__link">Store</a></li>
+          <li class="links__item"><a href="#Login" class="links__link">Login</a></li>
           <li class="links__item"><a href="#" class="links__link">Cart(0)</a></li>
         </ul>
       </nav>
@@ -68,8 +68,8 @@
     </div>
 
 
-    <main class="main">
-      <section class="section">
+    <main class="main" id="home">
+      <section class="section"id="Products">
         <h2 class="title title--secendary">
           Recommended
         </h2>
@@ -97,7 +97,7 @@
 
       </section>
 
-      <section class="section">
+      <section class="section" id="Store">
         <h2 class="title title--secendary">
           Browse Nothing products by category
         </h2>
@@ -152,7 +152,7 @@
         </p>
       </section>
 
-      <section class="section">
+      <section class="section" id="Login">
         <h2 class="title title--secendary">
           Contact us
         </h2>

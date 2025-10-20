@@ -1,9 +1,18 @@
 .menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   height: 100vh;;
   background-color: #E5E6E8;
+  &:target{
+    transform: translateX(0);
+  }
   &__links{
     margin-bottom:48px ;
   }
