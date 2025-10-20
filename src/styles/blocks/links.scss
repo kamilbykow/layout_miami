@@ -1,0 +1,24 @@
+.links{
+  padding-top:60px ;
+  &__item{
+    margin-bottom: 32px;
+  }
+  &__link{
+    font-family: "Space Grotesk",sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom:1px solid transparent;
+
+    &:hover{
+      border-bottom:1px solid #292929;
+    }
+
+    color: #292929;
+  }
+}
