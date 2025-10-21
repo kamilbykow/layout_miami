@@ -2,6 +2,7 @@
   &__photo{
     width: 100%;
     height: 100%;
+    margin-bottom: 24px;
   }
   &__title{
     font-family: "Space Grotesk",sans-serif;
@@ -11,6 +12,7 @@
     line-height: 140%;
     letter-spacing: 0;
     color: #292929;
+    margin-bottom: 8px;
 
   }
   &__description{
@@ -20,6 +22,7 @@
     line-height: 140%;
     letter-spacing: 0;
     color: #292929;
+    margin-bottom: 12px;
 
   }
   &__price{
