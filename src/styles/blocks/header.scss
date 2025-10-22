@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .header{
   background-color: aquamarine;
   background-image: url(../images/header-background-big.jpg);
@@ -14,7 +16,7 @@
   grid-template-rows:1fr 1fr ;
   gap:20px;
 
-  @media (min-width:600px ) and ( max-width:1019) {
+  @include for-desktop-medium {
     grid-template-columns: repeat(6, 80px);
     grid-template-rows:1fr 1fr ;
     gap:24px;
@@ -22,7 +24,7 @@
     background-position-x:center ;
   }
 
-  @media (min-width: 1020px) {
+  @include for-desktop-big {
     grid-template-columns: repeat(12, 63px);
     grid-template-rows:1fr 1fr ;
     gap:24px;
@@ -35,11 +37,11 @@
       grid-row:1 / 2;
       align-self: start;
 
-      @media (min-width:600px ) and ( max-width:1019) {
+      @include for-desktop-medium {
         grid-column: 1 / 7;
       }
 
-      @media (min-width: 1020px) {
+      @include for-desktop-big {
       grid-column: 1 / 13;
       }
     }
@@ -49,11 +51,11 @@
       grid-row:2 / 3;
       align-self: end;
 
-      @media (min-width:600px ) and ( max-width:1019) {
+      @include for-desktop-medium {
         grid-column: 1 / 7;
       }
-      
-      @media (min-width: 1020px) {
+
+      @include for-desktop-big {
         grid-column: 1 / 13;
       }
     }

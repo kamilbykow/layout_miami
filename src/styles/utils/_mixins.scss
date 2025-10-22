@@ -4,3 +4,15 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin for-desktop-medium(){
+   @media (min-width:600px ) and ( max-width:1019) {
+    @content
+  }
+};
+
+@mixin for-desktop-big(){
+   @media (min-width:1020px) {
+    @content
+  }
+};
