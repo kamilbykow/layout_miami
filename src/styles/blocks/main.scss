@@ -1,4 +1,57 @@
+@use '../utils/mixins';
+
 .main{
   padding: 0 20px;
   margin-bottom: 64px;
+  margin-top:64px ;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  gap:20px;
+
+  @include for-desktop-medium {
+    grid-template-columns: repeat(6, 80px);
+    gap:24px;
+  }
+
+  @include for-desktop-big {
+    grid-template-columns: repeat(12, 63px);
+    gap:24px;
+  }
+
+  &__title{
+    grid-column: 1/3;
+
+    @include for-desktop-medium {
+      grid-column: 1/4;
+    }
+
+    @include for-desktop-big {
+      grid-column: 1/7;
+    }
+  }
+
+  &__content{
+    grid-column: 1/3;
+
+    @include for-desktop-medium {
+      grid-column: 4/7;
+    }
+
+    @include for-desktop-big {
+      grid-column: 7/13;
+    }
+  }
+
+  &__section{
+    grid-column: 1/3;
+
+    @include for-desktop-medium {
+      grid-column: 1/6;
+    }
+
+    @include for-desktop-big {
+      grid-column: 1/13;
+    }
+  }
 }
