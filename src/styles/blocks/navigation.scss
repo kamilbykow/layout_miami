@@ -1,11 +1,16 @@
+@use "../utils/mixins";
+
 .navigation{
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &__logo{
-    width: 125px;
     height: 16px;
+
+    @include for-desktop-medium{
+      height: 24px;
+    }
   }
   &__icons{
     display: flex;
@@ -13,5 +18,13 @@
   }
   &__link{
     line-height: 0;
+  }
+
+  &__phone{
+    height: 24px;
+
+    @include for-desktop-medium{
+      height: 32px;
+    }
   }
 }

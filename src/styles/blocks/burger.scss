@@ -8,6 +8,12 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+
+    @include for-desktop-medium{
+      width: 32px;
+      height: 32px;
+    }
+
   }
 
   &::after{
@@ -17,6 +23,11 @@
     background-size: cover;
     width: 24px;
     height: 24px;
+    
+    @include for-desktop-medium{
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &:hover{
