@@ -1,3 +1,5 @@
+@use "../utils/mixins";
+
 .footer{
   height: 200px;
 
@@ -5,4 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @include for-desktop-medium{
+    height: 400px;
+  }
+
+  @include for-desktop-big{
+    height: 460px;
+  }
 }
