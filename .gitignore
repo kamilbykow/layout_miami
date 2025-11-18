@@ -13,6 +13,5 @@ backstop_data
 dist
 .cache
 .parcel-cache
-
-styles.css
-styles.css.map
+src\styles\styles.css
+src\styles\styles.css.map
