@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="./styles/styles.css"
     />
+    <link rel="icon" type="image/x-icon"
+      href="/src/images/favicon.png" />
     <script
       src="scripts/main.js"
       defer
@@ -185,19 +187,21 @@
             <div class="form__item">
               <label for="name" class="form__label">Name</label>
               <input class="form__input" type="text"
-                placeholder="Name" id="name">
+                placeholder="Name" id="name"
+                required>
             </div>
 
             <div class="form__item">
               <label for="email" class="form__label">Email</label>
               <input class="form__input" type="text"
-                placeholder="Email" id="email">
+                placeholder="Email" id="email"
+                required>
             </div>
 
             <div class="form__item">
               <label for="message" class="form__label">Message</label>
               <textarea class="form__textarea" placeholder="Message"
-              id="message"></textarea>
+              id="message" required></textarea>
             </div>
 
             <button class="button form__button contact__button button__form">Send</button>
@@ -205,50 +209,18 @@
           </form>
           <address class="address contact__address">
             <h4 class="address__lebel">Phone</h4>
-            <p class="address__content">+1 234 5555-55-55</p>
+            <a class="address__content" href="tel:+123455555555">+1 234 5555-55-55</a>
             <h4 class="address__lebel">Email</h4>
-            <p class="address__content">hello@nothing.com</p>
+            <a class="address__content" href="mailto:hello@nothing.com">hello@nothing.com</a>
             <h4 class="address__lebel">Address</h4>
-            <p class="address__content">
+            <a class="address__content" href="https://www.google.com/maps/search/?api=1&query=400+first+ave.+suite+700+Minneapolis+MN+55401"
+              target="_blank">
               400 first ave.
               <br>suite 700
               <br>Minneapolis, MN 55401
-            </p>
+            </a>
           </address>
         </div>
-        <!-- <form class="form">
-          <div class="form__item">
-            <label for="name" class="form__label">Name</label>
-            <input class="form__input" type="text"
-              placeholder="Name" id="name">
-          </div>
-
-          <div class="form__item">
-            <label for="email" class="form__label">Email</label>
-            <input class="form__input" type="text"
-              placeholder="Email" id="email">
-          </div>
-
-          <div class="form__item">
-            <label for="message" class="form__label">Message</label>
-            <textarea class="form__textarea" placeholder="Message"
-            id="message"></textarea>
-          </div>
-
-          <button class="button form__button">Send</button>
-        </form>
-        <address class="address">
-          <h4 class="address__lebel">Phone</h4>
-          <p class="address__content">+1 234 5555-55-55</p>
-          <h4 class="address__lebel">Email</h4>
-          <p class="address__content">hello@nothing.com</p>
-          <h4 class="address__lebel">Address</h4>
-          <p class="address__content">
-            400 first ave.
-            <br>suite 700
-            <br>Minneapolis, MN 55401
-          </p>
-        </address> -->
       </section>
     </main>
   </body>

@@ -39,6 +39,8 @@
     position: absolute;
     object-fit: cover;
     border-radius: 8px;
+
+    @include hover(transform, scale(1.1));
   }
 
   &__paragraph{

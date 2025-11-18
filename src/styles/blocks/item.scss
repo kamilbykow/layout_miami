@@ -1,8 +1,12 @@
+@use "../utils/mixins";
+
 .item{
   &__photo{
     width: 100%;
     height: auto;
     margin-bottom: 24px;
+
+    @include hover(transform, scale(1.1));
   }
   &__title{
     font-family: "Space Grotesk",sans-serif;
